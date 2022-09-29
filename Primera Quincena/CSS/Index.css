@@ -1,0 +1,17 @@
+body {color:rgb(0, 0, 0);}
+
+/* sólo color de fondo */
+body {background: #fff;}
+
+/* color de fondo e imagen en mosaico */
+body {background: #fff url(fondo.gif);}
+
+/* imagen fija , centrada y sin repetir */
+/* a modo de marca de agua */
+body  { 
+  background-color: #fff;
+  background-image: url(fondo.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
