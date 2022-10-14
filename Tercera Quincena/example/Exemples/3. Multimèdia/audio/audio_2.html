@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+    <title>
+        Multiple format audio example
+    </title>
+    <!-- Uncomment the following meta tag if you have issues rendering this page on an intranet site. -->    
+    <!--  <meta http-equiv="X-UA-Compatible" content="IE=9"/> --> 
+</head>
+<body>
+    <h1>
+        Using source to support multiple audio formats
+    </h1>
+    <!-- The browser will automatically choose the format it supports. -->
+    <audio controls="true" autoplay>
+        <source src="audio/Coldplay-Viva_La_Vida.ogg" type="audio/ogg"> 
+        <source src="audio/Coldplay-Viva_La_Vida.aac" type="audio/mp4"> 
+		<source src="audio/Coldplay-Viva_La_Vida.mp3" type="audio/mp3"> 
+        <!-- If no support at all. -->
+        HTML5 audio not supported 
+    </audio>
+</body>
+</html>

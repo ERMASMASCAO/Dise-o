@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width;initial-scale=1.0" >
+<!-- permet que funcione el disseny adaptable, si no està, la navegació és amb el zoom -->
+<title>Exemple de disseny adaptatiu</title>
+<link href="colors.css" rel="stylesheet" type="text/css" /> 
+<link href="base.css"    rel="stylesheet" type="text/css" />
+<!-- declararem classes per determinar quin és el model que volem vore -->
+<link href="great.css"   rel="stylesheet" type="text/css" media="screen and (min-width: 981px)" />
+<link href="medium.css   rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 980px)" />
+<link href="mini.css"    rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" />
+<!-- els tres css anteriors s'activaran depenent de les media queries-->
+</head>
+<body>
+
+<header>
+  <h1>Títol del website</h1>
+  <h2 class="display-great">GRAN</h2>
+  <h2 class="display-medium">MITJÀ</h2>
+  <h2 class="display-mini">MINI</h2>
+</header>
+
+<div id="wraper">
+  <nav id="main-nav">
+    <h2> Menú </h2>    
+    <ul class="menu display-great display-medium">
+       <li><a href="#"> Un    </a></ul>
+       <li><a href="#"> Dos   </a></ul>
+       <li><a href="#"> Tres  </a></ul>
+    </ul>
+    <select class="display-mini" >
+       <option> Un   </option>
+       <option> Dos  </option>
+       <option> Tres </option>
+    </select>
+  </nav>
+  <section id="main-section">
+    <h2>Contingut</h2>
+    
+    <article>
+      <h3><a href="#">Entrada 1</a></h3>
+      <p class="display-great display-medium"> Lorem ipsum bla bla </p>
+    </article>
+
+    
+    <article>
+      <h3><a href="#">Entrada 2</a></h3>
+      <p class="display-great display-medium"> Lorem ipsum bla bla </p>
+    </article>
+
+    
+    <article>
+      <h3><a href="#">Entrada 3</a></h3>
+      <p class="display-great display-medium"> Lorem ipsum bla bla </p>
+    </article>
+
+    
+</div>
+
+<footer>
+  <p> El típic peu que no llegirà ningú </p>
+  <select class="display-mini">
+    <option> Un   </option>
+    <option> Dos  </option>
+    <option> Tres </option>
+  </select>
+</footer>
+
+</body>
+</html>

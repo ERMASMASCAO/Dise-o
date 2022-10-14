@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+    <title>Using multiple file formats in JavaScript</title>
+    <!-- Uncomment the following meta tag if you have issues rendering this page on an intranet site. -->    
+    <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge"/> --> 
+ 
+    <script type= "text/javascript">
+        function checkAudioCompat() {
+            var myAudio = document.createElement('audio');
+            var msg = document.getElementById("display");
+
+            msg.innerHTML = "";
+            
+            if (myAudio.canPlayType) {
+                // CanPlayType returns maybe, probably, or an empty string.
+                var playMsg = myAudio.canPlayType('audio/mpeg');
+                if ( "" != playMsg) {
+                    msg.innerHTML += "mp3 is " + playMsg + " supported<br/>";
+                }
+                playMsg = myAudio.canPlayType('audio/ogg; codecs="vorbis"'); 
+                if ( "" != playMsg){
+                    msg.innerHTML += "ogg is " + playMsg + " supported<br/>";                    
+                }
+
+                playMsg = myAudio.canPlayType('audio/mp4; codecs="mp4a.40.5"');
+                if ( "" != playMsg){
+                    msg.innerHTML += "aac is "+playMsg+" supported<br/>";
+                }
+            }
+            else {
+                msg.innerHTML += "no audio support";                
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="checkAudioCompat();">
+        Test for audio format type
+    </button>
+    <div id="display"> </div>
+</body>
+</html>

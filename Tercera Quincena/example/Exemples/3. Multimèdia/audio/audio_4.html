@@ -1,0 +1,19 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <style type="text/css" media="screen">
+    </style>
+    
+  </head>
+  <body>
+	<audio src="audio/Coldplay-Viva_La_Vida.mp3" controls="controls"></audio>
+	<script type="text/javascript">
+		var audio = document.createElement("audio");
+		audio.src = "audio/Coldplay-Viva_La_Vida.mp3";
+		audio.addEventListener("canplaythrough", function () {
+			alert('The file is loaded and ready to play!');
+		}, false);
+    </script>
+  </body>
+</html>

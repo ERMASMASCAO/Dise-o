@@ -1,0 +1,15 @@
+.display-great {display: none;}
+
+.display-medium {display: none;}
+
+.display-mini {display: none;}
+
+/* aquestes tres classes són el truc per amagar o mostrar cert contingut segons disseny que s'està aplicant */
+
+.menu {padding-left: 0;}
+
+.menu li {
+   display: inline;
+   list-style-type: none;
+}
+

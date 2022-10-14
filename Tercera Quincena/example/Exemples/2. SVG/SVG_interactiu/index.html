@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ejemplo Raphaël.js</title>
+        <meta charset='utf-8'>
+    </head>
+    
+    <body>
+        
+        <script src='js/raphael-min.js'></script>
+        <script>
+            window.onload = function(){
+                //Nos genera un lienzo SVG (no confundir con canvas)
+                //El elemento tiene un valor de posición 10 10 absoluto
+                //Mide 300 x 300px
+                
+                var lienzo = Raphael(10, 10, 300, 300);
+                
+                //Ejemplo de círculo
+                var circulo = lienzo.circle(150, 150, 30);
+                
+                //Ejemplo de Path
+                var polilinea = lienzo.path("M 100 100 C 120 50 180 50 200 100");
+                
+                
+                //Definiendo atributos
+                circulo.attr('fill', 'red');
+                polilinea.attr('fill', 'rgba(200,200,200,0.8)');
+                polilinea.attr({'stroke-width': 10,'stroke': 'red'});
+                
+                circulo.click(function(){
+                    var anim = new Raphael.animation({cx: 10, cy: 20}, 400, "bounce", function(){alert("SVG ES GENIAL!");});
+                    this.animate(anim);
+                });
+                
+                
+            } 
+        </script>
+    </body>
+</html>
