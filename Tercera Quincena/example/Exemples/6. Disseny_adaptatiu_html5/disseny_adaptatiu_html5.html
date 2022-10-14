@@ -2,64 +2,91 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width;initial-scale=1.0" >
-<!-- permet que funcione el disseny adaptable, si no est�, la navegaci� �s amb el zoom -->
-<title>Exemple de disseny adaptatiu</title>
+<title>Exemple de disseny HTML5 + CSS3</title>
 <link href="colors.css" rel="stylesheet" type="text/css" /> 
 <link href="base.css"    rel="stylesheet" type="text/css" />
-<!-- declararem classes per determinar quin �s el model que volem vore -->
 <link href="great.css"   rel="stylesheet" type="text/css" media="screen and (min-width: 981px)" />
-<link href="medium.css   rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 980px)" />
-<link href="mini.css"    rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" />
-<!-- els tres css anteriors s'activaran depenent de les media queries-->
-</head>
+
 <body>
 
 <header>
-  <h1>T�tol del website</h1>
-  <h2 class="display-great">GRAN</h2>
-  <h2 class="display-medium">MITJ�</h2>
-  <h2 class="display-mini">MINI</h2>
+  <h1>TOPVapersESP</h1>
+  <h2 class="display-great"></h2>
+  
 </header>
 
 <div id="wraper">
   <nav id="main-nav">
-    <h2> Men� </h2>    
-    <ul class="menu display-great display-medium">
-       <li><a href="#"> Un    </a></ul>
-       <li><a href="#"> Dos   </a></ul>
-       <li><a href="#"> Tres  </a></ul>
+    <ul class="menu display-great display-great">
+      
+      <li><a href="Vapers" >Vapers</a></ul>
+        <select class="display-great" >
+          <option>Vaporesso</option>
+          <option> Voopoo</option>
+          <option> LOST VAPE</option>
+       </select>
+       
+       <li><a href="Líquidos">Líquidos</a></ul>
+        <select class="display-great" >
+          <option>Frios</option>
+          <option> Tabacoso </option>
+          <option> Dulces </option>
+       </select>
+       <li><a href="Atomizadores">Atomizadores</a>
+        <select class="display-great" >
+          <option>Alto comercial</option>
+          <option> Alto RDA  </option>
+          <option> Alto RDTA </option>
+       </select></ul>
+
+      <li><a href="Acesorios">Accesorios</a>
+        <select class="display-great" >
+          <option>Battery (MODs)</option>
+          <option> Baterías eGo  </option>
+          <option> Accesorio Atos </option>
+       </select></ul>
     </ul>
-    <select class="display-mini" >
-       <option> Un   </option>
-       <option> Dos  </option>
-       <option> Tres </option>
-    </select>
   </nav>
   <section id="main-section">
-    <h2>Contingut</h2>
+    <h2>NUESTRA TIENDA</h2>
     
     <article>
-      <h3><a href="#">Entrada 1</a></h3>
-      <p class="display-great display-medium"> Lorem ipsum bla bla </p>
+      <h3><a href="#">Información</a></h3>
+      <p class="display-great display-great">
+        En TOPVapersESP tenemos un objetivo: cada día nos esforzamos por ser la mejor tienda de productos vapeo online de España. Queremos convertirnos en un referente de la tienda de productos para vapear online a nivel nacional en España para que puedas comprar todos los productos para vapear de la mejor calidad al mejor precio y recibirlos en tu casa en tiempo record. Desde que comenzamos nuestra trayectoria profesional hace ya más de 10 años, con cuatro tiendas físicas en Castellón de la Plana y Vila-Real, nos hemos especializado en el asesoramiento y venta de productos de tienda de productos para vapear, sabiéndonos adaptar en todo momento tanto a las necesidades de nuestros clientes como a los nuevos tiempos, tratando de satisfacer de la mejor manera posible las compras online de los clientes que confían en nosotros.
+        Tienda de Productos para Vapear Online Barata
+        En TOPVapersESP disponemos de un amplio y completo catálogo de productos compuesto por más de 30.000 productos para vapeo online con un surtido continuo, sin problemas de stock y con incorporación de nuevos productos de . Las últimas novedades en tienda de líquidos para vapear, los últimos modelos e innovaciones técnicas las encontrarás aquí, en TOPVapersESP, tu tienda de vapeo online de confianza. Todas las variedades de aromas están cubiertas de la mano de Esmoking Spain. Te ofrecemos los mejores productos para vapers, líquidos, sales, aromas, alquimia, atomizadores, consumibles, accesorios, ofertas.
+        En TOPVapersESP te ofrecemos un trato cercano y profesional. Nos apasiona el mundo de el vapeo y tenemos un equipo experto en él, por eso también estaremos encantados de poder asesorarte para que elijas los productos que mejor se adapten a tus necesidades siguiendo nuestro criterio profesional avalado gracias a nuestra experiencia de más de 10 años en el sector del vapeo. Nuestra web de productos de vapeo online está abierta durante las 24 horas del día y los 365 días del año, incluso festivos con toda la atención al cliente que necesites. </p>
     </article>
 
-    
     <article>
-      <h3><a href="#">Entrada 2</a></h3>
-      <p class="display-great display-medium"> Lorem ipsum bla bla </p>
+      <h3><a href="#">Ubicación</a></h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1112.4954040472855!2d-0.03851877763530998!3d39.98534258686217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfloristeria!5e0!3m2!1ses!2ses!4v1665472825382!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
-
-    
-    <article>
-      <h3><a href="#">Entrada 3</a></h3>
-      <p class="display-great display-medium"> Lorem ipsum bla bla </p>
-    </article>
-
-    
+</div>
+<div>
+  <section id="content">
+    <h2>Post a comment</h2>
+    <form action="#" method="post">
+        <p>
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" required />
+        </p>
+        <p>
+            <label for="email">E-mail</label>
+            <input name="email" id="email" type="email" required />
+        </p>
+        <p>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" required></textarea>
+        </p>
+        <p><input type="submit" value="Post comment" /></p>
+    </form>
+</section>
 </div>
 
 <footer>
-  <p> El t�pic peu que no llegir� ning� </p>
+  <p>2020 TOPVapersESP by cliacs | Aviso legal | Politica cookies | Politica de privacidad</p>
   <select class="display-mini">
     <option> Un   </option>
     <option> Dos  </option>

@@ -11,9 +11,7 @@ header, footer, #wrapper {
 }
 
 main-nav {
-  float: left;
-  width: 20%
-  max-width: 300px;
+  
 }
 
 main-section {
