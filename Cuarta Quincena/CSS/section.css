@@ -1,0 +1,31 @@
+#bloque1{
+    width: 650px;
+    margin: 20px;
+}
+#bloque2{
+    width: 730px;
+    margin: 20px;
+}
+#bloque3{
+    width: 740px;
+    margin: 20px;
+}
+#bloque1 img{
+    float:right;
+}
+h1{
+    font-size: 30px;
+    color: rgb(76, 199, 193);
+}
+h2{
+    font-size: 20px;
+    color: rgb(37, 148, 142);
+}
+#h1rojo{
+    font-size: 20px;
+    color: brown;
+}
+#uno{
+
+}
+#uno
