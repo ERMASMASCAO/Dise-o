@@ -323,3 +323,15 @@ footer img{
     color: #000;
     text-align: right;
 }
+
+/* Aqui vamos a poner que la web sea responsive con @media */
+
+@media only screen and (max-width: 700px) {
+/* Boton menú desplegable para la web resoponsiva */
+    .menu{
+        display: grid;
+        grid-template-areas: 'header'
+        'body'
+        'footer';
+    }
+}
